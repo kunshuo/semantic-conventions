@@ -214,9 +214,9 @@ Instrumentations SHOULD document the list of errors they report.
 the canonical name of exception that occurred, or another low-cardinality error identifier.
 Instrumentations SHOULD document the list of errors they report.
 
-**[2] `gen_ai.guradrail.stage`:** represents the stage of the guardrail. query is the stage before the model is invoked, response is the stage after the model is invoked.
+**[2] `gen_ai.guardrail.stage`:** represents the stage of the guardrail. query is the security check stage before the model is invoked, response is the security check stage after the model is invoked.
 
-**[3] `gen_ai.guradrail.result`:**  represents the result of the guardrail. `-1` means the guardrail is not triggered, `0` means the guardrail is triggered but the request is allowed, `1` means the guardrail is triggered and the request is rejected, `3` means the guardrail is triggered but to be confirmed.
+**[3] `gen_ai.guardrail.result`:**  represents the result of the guardrail. `-1` means the guardrail is not triggered, `0` means the guardrail is triggered but the request is allowed, `1` means the guardrail is triggered and the request is rejected, `3` means the guardrail is triggered but to be confirmed.
 
 ---
 
